@@ -1,0 +1,87 @@
+\documentclass[10pt]{article}
+\textheight = 21cm
+\textwidth = 15cm
+\topmargin = -0.5cm
+\oddsidemargin = 1cm
+
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{epstopdf}
+\usepackage{titling}
+\usepackage{fancyvrb,fancybox,calc} 
+\usepackage[svgnames]{xcolor} 
+\usepackage{enumerate}
+\usepackage{adjustbox}
+\usepackage{tabu}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{subcaption}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\parindent=0mm
+
+\definecolor{light-gray}{gray}{0.94}
+\definecolor{textgray}{gray}{0.5}
+\newenvironment{verbcode}{\VerbatimEnvironment
+  \begin{Sbox} \color{textgray}\scriptsize
+  \begin{minipage}{\linewidth+2\fboxsep-2\fboxrule-12pt}    
+  \begin{Verbatim}
+}{\end{Verbatim}  
+  \end{minipage}   
+  \end{Sbox} \color{black}\normalsize
+  \fcolorbox{black}{light-gray}{\TheSbox} 
+} 
+
+\begin{document}
+\begin{center}
+
+\textsc{\LARGE Sistemas de Control}\\[0.2cm]
+\textsc{\Large Instituto Tecnológico de Buenos Aires}\\[0.2cm]
+
+% Title
+\HRule \\[0.2cm]
+{ \huge \bfseries Entrega guía número 5 \\[0.2cm] }
+\HRule \\[1cm]
+
+\begin{multicols}{2}
+
+
+% Integrantes
+\columnbreak
+{\raggedright
+\large
+\emph{Alumnos/as:} \ Bautista \textsc{Estrada} \\
+\hspace*{2.5cm} Facundo \textsc{Garaguso Fernandez}\\
+\hspace*{2.5cm} Joaquín \textsc{Basualdo}\\
+}
+\end{multicols}
+
+\vspace{0.5cm}
+
+\begin{adjustbox}{max width=\textwidth}
+\renewcommand{\arraystretch}{1.5}
+  \begin{tabular}{|l|c|}
+    \hline
+    \ \ \ Nota Final    &              \\ \hline \hline
+    \ \ \ Firma y Fecha &              \\ \hline
+  \end{tabular}
+\end{adjustbox}
+
+\end{center}
+
+\vspace{0.2cm}
+
+\pagestyle{fancy}
+\headheight=60pt
+\fancyhead[L]{Sistemas de Control - ITBA - 2026}        
+\fancyhead[R]{Guia 5}
+
+\newpage
+
+
+\end{document}
